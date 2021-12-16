@@ -1,8 +1,12 @@
 export const feature = (input: number) => {
+    type SomeType = ":D";
     if(input === 1) return "Hello";
 
     /* istanbul ignore if */
-    if(input === 2) return "World";
+    if(input === 2) {
+        type AnotherType = "D:";
+        return "World";
+    }
     /* istanbul ignore else */
     else if(input === 3) {
         /* istanbul ignore next */
@@ -13,7 +17,9 @@ export const feature = (input: number) => {
 }
 
 export const featurePartTwo = (input: string) => {
+    /* istanbul ignore if */
     if(input === "1") return "Hello";
+    // this will be uncovered
     if(input === "2") return "World";
 
     return "Hello World";
