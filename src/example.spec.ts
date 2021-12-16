@@ -1,4 +1,4 @@
-import {badIstanbul, downloadDocument} from "./something";
+import {badIstanbul, downloadDocument} from "./example";
 
 describe("ya", () => {
     it("does the thing", () => {
