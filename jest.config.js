@@ -20,7 +20,7 @@ module.exports = {
             syntax: "typescript",
           },
           transform: {},
-          target: "es2021",
+          target: "es5",
         },
       },
     ],
