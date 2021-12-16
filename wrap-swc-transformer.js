@@ -15,7 +15,6 @@ const wrapTransformer = (swcOptions) => {
             const result = swcTransformer.process(src, filename, jestOptions);
             if( src.match(istanbulFileLevelMatcher) ){
                 result.code += FILE_LEVEL_IGNORE;
-                console.log(result.code)
             }
 
             return result;
